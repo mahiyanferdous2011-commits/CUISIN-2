@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuisine Sylhet</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      color:#ffb703;
+    }
+
+    .hero p{
+      margin-top:15px;
+      font-size:1.2rem;
+      max-width:700px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 30px;
+      background:#ffb703;
+      color:#111;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    section{
+      padding:70px 10%;
+    }
+
+    .section-title{
+      font-size:2.5rem;
+      margin-bottom:25px;
+      color:#ffb703;
+      text-align:center;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .menu{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .menu-card{
+      background:#1e1e1e;
+      padding:25px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .menu-card:hover{
+      transform:translateY(-8px);
+      background:#292929;
+    }
+
+    .menu-card h3{
+      color:#ffb703;
+      margin-bottom:10px;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:12px 0;
+      font-size:1.1rem;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+      color:#aaa;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <div class="hero">
+      <h1>Kuisine Sylhet</h1>
+      <p>
+        Experience premium seafood, sushi, grills, and pan-Asian cuisine
+        in the heart of Sylhet.
+      </p>
+
+      <a href="#contact" class="btn">Book a Table</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+           alt="Restaurant">
+
+      <div>
+        <p>
+          Kuisine Sylhet is one of Sylhet’s most stylish dining destinations,
+          offering delicious seafood platters, sushi, steaks, kebabs,
+          and fusion dishes.
+        </p>
+
+        <br>
+
+        <p>
+          Whether you're planning a family dinner, date night,
+          or group celebration, Kuisine delivers an unforgettable
+          dining experience with elegant ambiance and flavorful cuisine.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section>
+    <h2 class="section-title">Popular Menu</h2>
+
+    <div class="menu">
+
+      <div class="menu-card">
+        <h3>Seafood Boil</h3>
+        <p>
+          Fresh seafood with Cajun spices, corn, potatoes,
+          and signature sauce.
+        </p>
+      </div>
+
+      <div class="menu-card">
+        <h3>Sushi Rolls</h3>
+        <p>
+          Premium sushi rolls prepared with fresh ingredients
+          and authentic flavors.
+        </p>
+      </div>
+
+      <div class="menu-card">
+        <h3>Grilled Steak</h3>
+        <p>
+          Juicy grilled steak served with vegetables
+          and special sauce.
+        </p>
+      </div>
+
+      <div class="menu-card">
+        <h3>Kebab Platter</h3>
+        <p>
+          Mixed kebabs and BBQ items served with naan and dips.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+      <p><strong>Address:</strong> 112 Azadi, Karimganj - Sylhet Rd, Sylhet 3100</p>
+
+      <p><strong>Phone:</strong> +880 1325-075054</p>
+
+      <p><strong>Opening Hours:</strong> 12:00 PM – 11:50 PM</p>
+
+      <a class="btn" href="tel:+8801325075054">
+        Call Now
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Kuisine Sylhet | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
